@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  <link rel="stylesheet" type="text/css" href="node_modules/semantic-ui-css/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="ui equal width center aligned padded grid" id="bandeau">
+   <div class="row" "color: #FFFFFF ;height: 400px;">
+     <div class="column">
+       <img class="ui centered medium image " src="http://lorempicsum.com/futurama/255/200/2" alt="photo_de_profile">
+       <h1>{{Prenom}} {{Nom}}</h1>
+       <h2>{{occupation}}</h2>
+     </div>
+   </div>
+ </div>
+ <div class="ui mobile reversed relaxed centered grid container stackable two column row">
+     <div class="nine wide column ui menu bio">
+       <h2 class="ui horizontal divider">Biographie</h2>
+       <p class="bio_paragraphe">{{biographie}}</p>
+     </div>
+     <div class="two wide column container">
+       <nav class="ui vertical menu">
+         <a href"{{linkedin}}" class="item"><i class="linkedin icon"></i>Linkedin</a>
+         <a href"{{github}}" class="item"><i class="github alternate icon"></i>Github</a>
+         <a href"{{website}}" class="item"><i class="desktop icon"></i>Site perso</a>
+       </nav>
+     </div>
+   </div>
+ </div>
+  <script src="node_modules/semantic-ui-css/semantic.min.js"></script>
+</body>
+</html>
